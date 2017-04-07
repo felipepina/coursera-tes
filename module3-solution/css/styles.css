@@ -1,0 +1,90 @@
+.navbar-default {
+  border-width: 2px;
+  border-color: black;
+  border-radius: 0px;
+}
+#navbar-container {
+  background: #909090;
+}
+#navbar-container .navbar-brand {
+  font-family: 'Muli', sans-serif;
+  font-size: 2em;
+  color: black;
+}
+.navbar-default .navbar-toggle {
+  border-color: black;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #afafaf;
+  border-color: white;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: white;
+}
+.navbar-default .navbar-toggle[aria-expanded=true] {
+  border-color: white;
+}
+.navbar-default .navbar-toggle[aria-expanded=true] .icon-bar {
+  background-color: white;
+}
+#navbar-collapse-1 {
+  border-color: black;
+  background: white;
+  padding: 0px;
+  background-color: #909090;
+}
+#menu-list {
+  margin: 0px;
+}
+#menu-list a {
+  color: black;
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+#menu-list li {
+  border-bottom: 1px solid black;
+}
+#menu-list li:nth-last-child(-n+1){
+  border-bottom: 0px;
+}
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2em;
+}
+.item {
+  background-color: #909090;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.item_title {
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.item_details {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#content-container.container-fluid {
+/*   margin-left: 2%; */
+/*   margin-right: 2%; */
+/*   width: 96%; */
+  margin-top: 30px;
+}
+
+@media (max-width: 767px) {
+  #content-container.container-fluid {
+    padding-left: 10%;
+    padding-right: 10%;
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
+  }
+}

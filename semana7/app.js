@@ -7,12 +7,11 @@ angular.module('LunchCheck', [])
 LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope) {
     $scope.checkMenu = function(){
-        //console.log($scope.menu);
-        $scope.message = countMenu($scope.menu);
+        $scope.message = analyzeMenu($scope.menu);
     }
 }
 
-function countMenu(menu){
+function analyzeMenu(menu){
     if(menu == null || menu.length === 0) {
         return "Please enter data first";
     }

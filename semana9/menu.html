@@ -1,0 +1,16 @@
+<div ng-if="menu.found && menu.found.length == 0">
+    <h3>Nothing found</h3>
+</div>
+<div ng-if="menu.found && menu.found.length > 0">
+    <h3>Results</h3>
+    <ul class="list-group">
+        <li class="list-group-item clearfix" ng-repeat="item in menu.found">
+            <h4 class="list-group-item-heading">{{ item.name }} ({{ item.short_name }})
+                <span class="pull-right">
+                <button class="btn btn-danger" ng-click="menu.removeItem($index);">Don't want this one!</button>
+                </span>
+            </h4>
+            <p class="list-group-item-text">{{ item.description }}</p>
+        </li>
+    </ul>
+</div>

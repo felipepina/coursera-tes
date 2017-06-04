@@ -48,8 +48,7 @@
                 }
                 return foundItems;
             }, function errorCallback(response) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
+                // 
             });
         }
     }
@@ -58,8 +57,10 @@
     function FoundItemsDirective() {
         var ddo = {
             templateUrl: 'menu.html',
+            restrict: 'E',
             scope: {
-                found: '<'
+                found: '<',
+                onRemove: '&'
             },
             controller: NarrowItDownController,
             controllerAs: 'menu',

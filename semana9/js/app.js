@@ -59,7 +59,7 @@
             templateUrl: 'menu.html',
             restrict: 'E',
             scope: {
-                found: '<',
+                foundItems: '<',
                 onRemove: '&'
             },
             controller: NarrowItDownController,
@@ -68,9 +68,5 @@
         }
 
         return ddo;
-    }
-
-    function FoundItemsDirectiveController() {
-        var menu = this;
     }
 })();

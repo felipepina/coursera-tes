@@ -1,0 +1,25 @@
+body {
+  font-size: 1.2em;
+}
+
+.flex-h {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+.active {
+  font-weight: bold;
+  border-radius: 2pt;
+  border-width: 10pt;
+  color: white;
+  background-color: gray;
+}
+
+.box {
+  margin: 30px;
+}
+
+.content {
+  margin: 0 30px;
+}

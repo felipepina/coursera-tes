@@ -1,0 +1,33 @@
+<div class="row info">
+    <div ng-if="$ctrl.info">
+        <div class="col-md-4">
+            <!--<div class="panel-heading">Info</div>-->
+            <!--<div class="panel-body">-->
+            <div>
+                <div><strong>Fistname:</strong> <span>{{ $ctrl.info.firstname }}</span></div>
+            </div>
+            <div>
+                <div><strong>Lastname:</strong> <span>{{ $ctrl.info.lastname }}</span></div>
+            </div>
+            <div>
+                <div><strong>Email:</strong> <span>{{ $ctrl.info.email }}</span></div>
+            </div>
+            <div>
+                <div><strong>Phone #:</strong> <span>{{ $ctrl.info.phone }}</span></div>
+            </div>
+
+            <!--</div>-->
+        </div>
+
+        <div class="col-md-8">
+            <!--<div class="panel-heading">Favorite dish</div>-->
+            <!--<div class="panel-body">-->
+            <menu-item menu-item="$ctrl.info.menuItem"></menu-item>
+            <!--</div>-->
+        </div>
+    </div>
+
+    <div ng-if="!$ctrl.info">
+        Not Signed Up Yet. <a ui-sref='public.newsletter'>Sign up Now!</a>
+    </div>
+</div>
